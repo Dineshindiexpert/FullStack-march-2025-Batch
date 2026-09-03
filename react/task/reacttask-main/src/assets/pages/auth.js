@@ -1,0 +1,5 @@
+const Authacnt=()=>{
+    return <>
+    
+    </>
+}

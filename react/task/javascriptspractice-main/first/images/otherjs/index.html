@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            height: 50px;
+            aspect-ratio: 1;
+            border-radius: 50px;
+            gap: 20PX;
+            object-fit: cover;
+        }
+
+        h1 {
+            background-color: black;
+            text-align: center;
+            color: white;
+        }
+         
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 class="d-flex justify-content-center">hello guys </h1>
+
+        </div>
+        <div class="container">
+            <div class="images d-flex justify-content-center gap-5">
+                <img src="./images/file.jpg" alt="" id="rock">
+                <img src="../first/images/heero.webp" alt="" id="paper">
+                <img src="../first/images/sessors.webp" alt="" id="sessor">
+
+            </div>
+                    </div>
+        <div class="container d-flex justify-content-center gap-5 m-4">
+            <div class="your-score">
+                <p id="user-score" >0</p>
+                <p class="bg-primary p-3 rounded-4" >you</p>
+            </div>
+            <div class="your-score">
+                <p id="comp-score">0</p>
+                <p class="bg-success  p-3 border rounded-4">comp</p>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center">
+            <div class="message">
+                <p id="status" class="bg-danger p-3 rounded-4">you won</p>
+            </div>
+        </div>
+
+    </main>
+</body>
+<script src="./first.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</html>

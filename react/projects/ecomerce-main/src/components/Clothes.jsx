@@ -1,0 +1,61 @@
+import React, { useEffect, useState } from 'react';
+import ProductCard from './Productcard';
+import Loading from './Loading';
+import { apiService } from '../api'; // Ensure your api.js has getProducts()
+
+const Clothes = () => {
+    const [loading, setLoading] = useState(true);
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const loadData = async () => {
+            try {
+                 
+                const res = await apiService.getProducts();
+                setProducts(res.data);
+            } catch (err) {
+                console.error("Bhai error aagaya:", err);
+            } finally {
+                
+                setLoading(false);
+            }
+        };
+        loadData();
+    }, []);
+
+    return (
+        <div className="container-fluid px-4 bg-white min-vh-100">
+            {loading ? (
+                <Loading />
+            ) : (
+                <>
+                    <div className='my-4'>
+                        <h3 className="fw-bold text-dark">India's Trending Fashion Here</h3>
+                    </div>
+
+                    {/* FIRST SECTION: Trending Clothes */}
+                    <div className="d-flex flex-row flex-nowrap overflow-auto pb-4 custom-scrollbar">
+                        {products.map((product) => (
+                            <div key={product.id} className="me-3" style={{ minWidth: "250px" }}>
+                                <ProductCard product={product} />
+                            </div>
+                        ))}
+                    </div>
+
+                    <h3 className="mb-3 text-center py-3 fw-bold border-top mt-4">Our New Arrivals</h3>
+
+                    {/* SECOND SECTION: Reversed list for variety */}
+                    <div className="d-flex flex-row flex-nowrap overflow-auto pb-4 custom-scrollbar">
+                        {[...products].reverse().map((product) => (
+                            <div key={`rev-${product.id}`} className="me-3" style={{ minWidth: "250px" }}>
+                                <ProductCard product={product} />
+                            </div>
+                        ))}
+                    </div>
+                </>
+            )}
+        </div>
+    );
+};
+
+export default Clothes;

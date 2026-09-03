@@ -1,0 +1,53 @@
+my-ecom-store/
+├── app/                              (Pages & Routes)
+│   ├── layout.js                     (Global layout, Navbar/Footer, Providers)
+│   ├── loading.js                    (Common loading spinner)
+│   ├── page.js                       (Homepage - '/')
+│   ├── login/
+│   │   └── page.js                   ('/login')
+│   ├── register/
+│   │   └── page.js                   ('/register')
+│   ├── products/
+│   │   ├── page.js                   (All Products - '/products')
+│   │   └── [id]/
+│   │       └── page.js               (Single Product - '/products/:id')
+│   ├── cart/
+│   │   └── page.js                   (Shopping Cart - '/cart', protected)
+│   ├── checkout/
+│   │   └── page.js                   (Checkout - '/checkout', protected)
+│   ├── profile/
+│   │   ├── page.js                   (User Profile - '/profile', protected)
+│   │   └── orders/
+│   │       └── page.js               (Order History - '/profile/orders', protected)
+│   └── api/                          (Backend API routes)
+│       ├── products/route.js         (Products API)
+│       └── auth/route.js             (Login/Signup API)
+│
+├── components/                       (Reusable UI components)
+│   ├── layout/
+│   │   ├── Navbar.js
+│   │   └── Footer.js
+│   ├── ui/
+│   │   ├── Button.js
+│   │   └── Input.js
+│   └── product/
+│       ├── ProductCard.js
+│       └── ProductImage.js
+│
+├── lib/                              (Utilities & Helpers)
+│   ├── mongodb.js                     (DB connection)
+│   └── utils.js                       (Date/currency formatting, etc.)
+│
+├── middleware.js                     (Protected route middleware)
+│
+├── public/                           (Static files)
+│   └── logo.png
+│
+├── store/                             (State management, e.g., Zustand or Redux)
+│   └── useCartStore.js
+│
+└── styles/                            (Global CSS/Tailwind)
+    └── globals.css
+
+
+|__middleware.js
