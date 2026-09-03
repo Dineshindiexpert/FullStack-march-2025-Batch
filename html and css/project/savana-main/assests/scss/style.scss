@@ -1,0 +1,55 @@
+@import './variables';
+@import './../../node_modules/bootstrap/scss/functions';
+
+@import './../../node_modules/bootstrap/scss/variables';
+
+@import './../../node_modules/bootstrap/scss/bootstrap';
+$headings-font-family: ('Cormorant', serif);
+$font-family-sans-serif: ('Poppins', sans-serif);
+.fm-com {
+  font-family: $font-heading !important;
+}
+
+
+.aboutsavana {
+     background-color: #F4EDE5;
+}
+
+.card-body {
+     right: 13%;
+     left: 10%;
+     margin-bottom: -10%;
+     padding: 25px;
+     top: 68%;
+     height: 58%;
+
+}
+
+.bg-savana {
+
+     background-image: url('./../images/background-placeholder.png');
+     background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .why-wechooseus-card {
+    transform: translateY(75%);
+  }
+  .card-2 {
+    left: 8%;
+  }
+}
+.move-card{
+  margin-top: -27%;
+  margin-left:-20%;
+}
+.underline-after::after {
+    content: "";               
+    display: inline-block;     
+    width: 12%;                
+    height: 3px;              
+    background-color: #c47a5f; 
+    margin-left: 10px;      
+    vertical-align: middle;   
+}
+

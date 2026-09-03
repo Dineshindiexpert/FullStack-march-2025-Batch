@@ -1,0 +1,93 @@
+// Your color palette
+// Override variables before importing Bootstrap
+$primary: #c47a5f;
+$secondary: #999999;
+$headings-color: hwb(16 15% 68%);
+
+$navbar-dark-color: $headings-color;
+$bs-navbar-active-color: $headings-color;
+$navbar-dark-active-color: $headings-color;
+$nav-link-hover-color: $primary;
+$navbar-dark-hover-color: $primary;
+$success: hwb(16 15% 68%);
+$danger: #F4EDE5;
+$body-bg: #FEFBF6;
+$nav-link-color: $success;
+$nav-tabs-link-active-color:$primary;
+$nav-tabs-link-hover-color: $primary;
+// Fonts
+// ----------------------
+// Font Variables
+// ----------------------
+
+$font-family-sans-serif: ('Poppins', sans-serif);
+$headings-font-family: ('Cormorant', serif);
+$font-heading: ('Cormorant', serif);
+$font-body: ('Poppins', sans-serif);
+$font-buttons: ('Playfair Display', serif);
+$font-navbar: ('Poppins', sans-serif);
+
+
+// Line Heights
+$line-height-base: 1.7;
+$line-height-heading: 0.9;
+$line-height-body: 1.7;
+$line-height-buttons: 1.2;
+$line-height-navbar: 1.5;
+
+// Display sizes
+$display-font-sizes: (
+  1: 1rem,
+  2: 2.25rem,
+  3: 4rem,
+  4: 4.25rem,
+  5: 3rem,
+  6: 6rem
+
+);
+
+// Spacing
+$spacer: 5rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  210: $spacer * 14
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px); // fonts sizes 
+
+
+// ---------- nav-links ----------
+
+// Normal link color
+$nav-link-color: $success; 
+
+// Hover color
+$nav-link-hover-color: $primary;
+
+// Active color
+$nav-link-active-color: $primary;
+
+
+// ---------- navbar-light (for light background navbar) ----------
+$navbar-light-color: $success;            // normal link
+$navbar-light-hover-color: $primary;      // hover
+$navbar-light-active-color: $primary;     // active
+
+
+
+// h fonts sizes 
+$h1-font-size: 24px !default;  // h1 = 24px
+$h2-font-size: 20px !default;
+$h3-font-size: 18px !default;
+$h4-font-size: 16px !default;
+$h5-font-size: 14px !default;
+$h6-font-size: 12px !default;
