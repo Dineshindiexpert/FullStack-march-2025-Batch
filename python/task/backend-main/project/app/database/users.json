@@ -1,0 +1,64 @@
+[
+    {
+        "name": "",
+        "email": "user@example.com",
+        "password": "Dinesh@0053",
+        "mobile": "1234567890",
+        "address": "string",
+        "qualification": [
+            "string"
+        ],
+        "hobbies": [
+            "string"
+        ],
+        "is_deleted": false,
+        "id": "92b46436-601f-44af-ada9-34646a508dca"
+    },
+    {
+        "name": "kaushik",
+        "email": "kausik@example.com",
+        "password": "Dinesh@0053",
+        "mobile": "9896031541",
+        "address": "string",
+        "qualification": [
+            "string"
+        ],
+        "hobbies": [
+            "string"
+        ],
+        "is_deleted": false,
+        "id": "c82bbb3d-de2b-428e-9aef-dd304da1c339"
+    },
+    {
+        "name": "Dinesh jangra",
+        "email": "dineshjangra0062@gmail.com",
+        "password": "Dinesh@0053",
+        "mobile": "9728752168",
+        "address": null,
+        "qualification": [
+            "Music"
+        ],
+        "hobbies": [
+            "Coding"
+        ],
+        "dob": "1969-10-25",
+        "is_deleted": false,
+        "id": "a9019bff-4acd-4c58-9909-239dcf1086f9"
+    },
+    {
+        "name": "Dinesh jangra",
+        "email": "jonymittr3@gmail.com",
+        "mobile": "7015917626",
+        "address": null,
+        "password": "Dinesh@0053",
+        "qualification": [
+            "Sports"
+        ],
+        "hobbies": [
+            "Gaming"
+        ],
+        "dob": "2005-07-20",
+        "is_deleted": false,
+        "id": "f55dbeba-62b0-401e-8f70-b189a6df2785"
+    }
+]
